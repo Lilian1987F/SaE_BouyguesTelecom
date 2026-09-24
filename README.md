@@ -2,7 +2,7 @@
 
 ## Bouygues Telecom    
 
-[Nom du projet](https://lilian1987f.github.io/SaE_BouyguesTelecom/)
+[Page principal Bouygues Telecom](https://lilian1987f.github.io/SaE_BouyguesTelecom/)
 
 ## Membres du groupe :
 
