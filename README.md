@@ -13,4 +13,4 @@ Etudiant 4 : [HLAOUI May](mailto:may.hlaoui@edu.univ-fcomte.fr?subject=SAE_1_05_
 Etudiant 5 : [HANNACHI Mehdi](mailto:mehdi.hannachi02@edu.univ-fcomte.fr?subject=SAE_1_05_06) 
 
 # Présentation du projet
-...
+Dans le cadre de notre projet scolaire, nous créons un site web informatif sur Bouygues Telecom. L'objectif est de présenter l'entreprise et son positionnement sur le marché des télécommunications. Le site s'appuiera sur des informations économiques telles que son activité, son chiffre d'affaires et sa place face à la concurrence. Ce projet nous permet de mettre en pratique nos compétences web tout en approfondissant notre compréhension du secteur.
