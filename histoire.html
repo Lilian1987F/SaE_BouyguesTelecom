@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,13 +7,180 @@
     <title>Historique - Bouygues Telecom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
+
+    <style>
+        .history {
+            padding: 4rem 5%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .history h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .intro {
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+
+        .timeline {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2rem 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: 8%;
+            right: 8%;
+            height: 3px;
+            background: var(--primary-color);
+            opacity: 0.35;
+        }
+
+        .event {
+            position: relative;
+            z-index: 1;
+        }
+
+        .event button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font: inherit;
+            color: inherit;
+            background: white;
+            border: 1px solid #e1e5eb;
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .event button:hover,
+        .event button:focus-visible {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            outline: 2px solid var(--primary-color);
+        }
+
+        .event button[aria-expanded="true"] {
+            border-color: var(--primary-color);
+        }
+
+        .dot {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px var(--primary-color);
+            margin: 0 0 1.2rem 0.2rem;
+        }
+
+        .year {
+            display: block;
+            color: var(--primary-color);
+            font-size: 1.35rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .event h3 {
+            font-size: 1.05rem;
+            margin: 0 0 0.6rem;
+        }
+
+        .event p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .details {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f3f6fa;
+            border-left: 3px solid var(--primary-color);
+            border-radius: 5px;
+            line-height: 1.7;
+        }
+
+        .details[hidden] {
+            display: none;
+        }
+
+        .highlight {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: #f3f6fa;
+            line-height: 1.8;
+        }
+
+        .highlight h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        @media (max-width: 750px) {
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-left: 0.5rem;
+            }
+
+            .timeline::before {
+                top: 0;
+                bottom: 0;
+                left: 8px;
+                right: auto;
+                width: 3px;
+                height: auto;
+            }
+
+            .event {
+                padding-left: 1.5rem;
+            }
+
+            .dot {
+                position: absolute;
+                left: -0.1rem;
+                top: 1.3rem;
+                margin: 0;
+            }
+
+            .history {
+                padding: 2.5rem 5%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .event button {
+                transition: none;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <img src="./bouygues-telecom-logo.png" width="60" height="60">
+            <img src="./bouygues-telecom-logo.png"
+                 width="60" height="60"
+                 alt="Logo Bouygues Telecom">
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -24,14 +192,174 @@
         </nav>
     </header>
 
-    <main style="padding: 4rem 5%; max-width: 1000px; margin: 0 auto;">
-        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Histoire</h2>
-        <p>Bouygues Telecom est créé en 1994, lorsque le groupe Bouygues obtient la troisième licence de téléphonie mobile en France. L'opérateur lance son premier forfait en 1996, puis innove avec les offres illimitées Neo en 2006 et B&YOU en 2011. Aujourd'hui, il couvre plus de 99% de la population en 4G et compte environ 27 millions de clients mobile. </p>
+    <main class="history">
+        <h2>Histoire de Bouygues Telecom</h2>
+
+        <p class="intro">
+            Depuis sa création en 1994, Bouygues Telecom a évolué dans
+            un secteur marqué par les innovations technologiques,
+            l'intensification de la concurrence et la transformation
+            des usages numériques. Découvrez les principales étapes
+            de son développement en cliquant sur les événements.
+        </p>
+
+        <section class="timeline" aria-label="Frise chronologique interactive">
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-1994">
+                    <span class="year">1994</span>
+                    <h3>Création de l'opérateur</h3>
+                    <p>Bouygues Telecom obtient sa licence de téléphonie mobile.</p>
+                </button>
+                <div class="details" id="detail-1994" hidden>
+                    Le groupe Bouygues entre sur le marché français de la
+                    téléphonie mobile comme troisième opérateur, face aux
+                    acteurs déjà installés.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-1996">
+                    <span class="year">1996</span>
+                    <h3>Lancement commercial</h3>
+                    <p>Développement des premières offres mobiles.</p>
+                </button>
+                <div class="details" id="detail-1996" hidden>
+                    L'opérateur commence à commercialiser ses services.
+                    L'enjeu est alors de développer son réseau, d'attirer
+                    des abonnés et de se faire une place sur le marché.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-2006">
+                    <span class="year">2006</span>
+                    <h3>Les forfaits Neo</h3>
+                    <p>Des offres qui répondent à l'évolution des usages.</p>
+                </button>
+                <div class="details" id="detail-2006" hidden>
+                    Les offres Neo illustrent la volonté de se différencier
+                    par les services et les formules tarifaires, dans un
+                    marché où les opérateurs cherchent à fidéliser leurs clients.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-2011">
+                    <span class="year">2011</span>
+                    <h3>Lancement de B&YOU</h3>
+                    <p>Une réponse aux attentes de prix et de flexibilité.</p>
+                </button>
+                <div class="details" id="detail-2011" hidden>
+                    Avec B&YOU, Bouygues Telecom développe une offre
+                    positionnée sur les forfaits sans engagement et
+                    accompagne la montée en puissance des offres mobiles
+                    commercialisées en ligne.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-2012">
+                    <span class="year">2012</span>
+                    <h3>L'arrivée de Free Mobile</h3>
+                    <p>Un tournant dans la concurrence du secteur.</p>
+                </button>
+                <div class="details" id="detail-2012" hidden>
+                    Free Mobile entre sur le marché français en janvier 2012
+                    avec des offres qui accentuent la pression sur les prix.
+                    Les opérateurs historiques doivent adapter leurs tarifs,
+                    leurs marques et leurs stratégies commerciales.
+                    Cette étape marque une rupture importante pour
+                    Bouygues Telecom et l'ensemble du secteur.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-2013">
+                    <span class="year">2013</span>
+                    <h3>Accélération de la 4G</h3>
+                    <p>La qualité du réseau devient un enjeu majeur.</p>
+                </button>
+                <div class="details" id="detail-2013" hidden>
+                    Le déploiement de la 4G renforce l'importance de la
+                    couverture, des performances du réseau et des usages
+                    mobiles liés à l'Internet haut débit.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-2020">
+                    <span class="year">2020</span>
+                    <h3>Déploiement de la 5G</h3>
+                    <p>Une nouvelle génération de réseau mobile.</p>
+                </button>
+                <div class="details" id="detail-2020" hidden>
+                    Le lancement commercial de la 5G en France ouvre de
+                    nouvelles perspectives pour la connectivité et les
+                    services numériques. L'investissement dans les réseaux
+                    et la qualité de service reste central.
+                </div>
+            </article>
+
+            <article class="event">
+                <span class="dot" aria-hidden="true"></span>
+                <button type="button" aria-expanded="false" aria-controls="detail-aujourdhui">
+                    <span class="year">Aujourd'hui</span>
+                    <h3>Un marché en transformation</h3>
+                    <p>Réseaux, services et compétitivité.</p>
+                </button>
+                <div class="details" id="detail-aujourdhui" hidden>
+                    Bouygues Telecom évolue dans un marché mature où la
+                    concurrence porte notamment sur les prix, la qualité
+                    du réseau, les services aux particuliers et aux
+                    entreprises, ainsi que les investissements dans les
+                    nouvelles technologies.
+                </div>
+            </article>
+
+        </section>
+
+        <section class="highlight">
+            <h3>2012 : un tournant stratégique</h3>
+            <p>
+                L'arrivée de Free Mobile constitue un événement important
+                de l'histoire récente de Bouygues Telecom. La concurrence
+                accrue sur les prix pousse les opérateurs à revoir leurs
+                offres et leur positionnement commercial. Pour Bouygues
+                Telecom, le développement de B&YOU, les investissements
+                dans le réseau et la différenciation par les services
+                s'inscrivent dans un environnement profondément transformé.
+            </p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 - Page créée par Mohamed Mehdi Grati</p>
     </footer>
 
+    <script>
+        const eventButtons = document.querySelectorAll(".event button");
+
+        eventButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const detailsId = button.getAttribute("aria-controls");
+                const details = document.getElementById(detailsId);
+                const isExpanded =
+                    button.getAttribute("aria-expanded") === "true";
+
+                button.setAttribute("aria-expanded", String(!isExpanded));
+                details.hidden = isExpanded;
+            });
+        });
+    </script>
+
 </body>
 </html>
+```
