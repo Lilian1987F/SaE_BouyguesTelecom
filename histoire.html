@@ -5,167 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historique - Bouygues Telecom</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
 
     <style>
-        .history {
-            padding: 4rem 5%;
-            max-width: 1100px;
+        .histoire {
+            max-width: 1000px;
             margin: auto;
+            padding: 40px 5%;
         }
 
-        .history h2 {
+        .histoire h2 {
             color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         .intro {
-            line-height: 1.8;
-            margin-bottom: 3rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
         }
 
-        .timeline {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 2rem 1.5rem;
-            margin: 3rem 0;
+        .frise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
         }
 
-        .timeline::before {
-            content: "";
-            position: absolute;
-            top: 17px;
-            left: 8%;
-            right: 8%;
-            height: 3px;
-            background: var(--primary-color);
-            opacity: 0.35;
-        }
-
-        .event {
-            position: relative;
-            z-index: 1;
-        }
-
-        .event button {
-            display: block;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-            font: inherit;
-            color: inherit;
+        .etape {
+            flex: 1 1 250px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             background: white;
-            border: 1px solid #e1e5eb;
-            border-radius: 12px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .event button:hover,
-        .event button:focus-visible {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            outline: 2px solid var(--primary-color);
-        }
-
-        .event button[aria-expanded="true"] {
-            border-color: var(--primary-color);
-        }
-
-        .dot {
-            display: block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: var(--primary-color);
-            border: 3px solid white;
-            box-shadow: 0 0 0 2px var(--primary-color);
-            margin: 0 0 1.2rem 0.2rem;
-        }
-
-        .year {
-            display: block;
+        .etape h3 {
             color: var(--primary-color);
-            font-size: 1.35rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-bottom: 10px;
         }
 
-        .event h3 {
-            font-size: 1.05rem;
-            margin: 0 0 0.6rem;
-        }
-
-        .event p {
-            font-size: 0.95rem;
+        .etape p {
             line-height: 1.6;
-            margin: 0;
         }
 
-        .details {
-            margin-top: 1rem;
-            padding: 1rem;
-            background: #f3f6fa;
-            border-left: 3px solid var(--primary-color);
+        .etape button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
             border-radius: 5px;
+            background: var(--primary-color);
+            color: white;
+            cursor: pointer;
+        }
+
+        .etape button:hover {
+            opacity: 0.8;
+        }
+
+        .info {
+            display: none;
+            margin-top: 12px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+
+        .free {
+            margin-top: 35px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
             line-height: 1.7;
         }
 
-        .details[hidden] {
-            display: none;
-        }
-
-        .highlight {
-            margin-top: 3rem;
-            padding: 1.5rem;
-            border-radius: 12px;
-            background: #f3f6fa;
-            line-height: 1.8;
-        }
-
-        .highlight h3 {
+        .free h3 {
             color: var(--primary-color);
-            margin-top: 0;
+            margin-bottom: 10px;
         }
 
-        @media (max-width: 750px) {
-            .timeline {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                margin-left: 0.5rem;
-            }
-
-            .timeline::before {
-                top: 0;
-                bottom: 0;
-                left: 8px;
-                right: auto;
-                width: 3px;
-                height: auto;
-            }
-
-            .event {
-                padding-left: 1.5rem;
-            }
-
-            .dot {
-                position: absolute;
-                left: -0.1rem;
-                top: 1.3rem;
-                margin: 0;
-            }
-
-            .history {
-                padding: 2.5rem 5%;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .event button {
-                transition: none;
+        @media (max-width: 600px) {
+            .frise {
+                flex-direction: column;
             }
         }
     </style>
@@ -175,8 +95,7 @@
 
     <header>
         <div class="logo">
-            <img src="./bouygues-telecom-logo.png"
-                 width="60" height="60"
+            <img src="./bouygues-telecom-logo.png" width="60" height="60"
                  alt="Logo Bouygues Telecom">
         </div>
 
@@ -191,152 +110,112 @@
         </nav>
     </header>
 
-    <main class="history">
+    <main class="histoire">
+
         <h2>Histoire de Bouygues Telecom</h2>
 
         <p class="intro">
-            Depuis sa création en 1994, Bouygues Telecom a évolué dans
-            un secteur marqué par les innovations technologiques,
-            l'intensification de la concurrence et la transformation
-            des usages numériques. Découvrez les principales étapes
-            de son développement en cliquant sur les événements.
+            Bouygues Telecom a été créé en 1994. Depuis, l'entreprise
+            a connu plusieurs évolutions, notamment avec l'arrivée
+            de nouvelles technologies et de nouveaux concurrents.
+            Voici les dates importantes de son histoire.
         </p>
 
-        <section class="timeline" aria-label="Frise chronologique interactive">
+        <div class="frise">
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-1994">
-                    <span class="year">1994</span>
-                    <h3>Création de l'opérateur</h3>
-                    <p>Bouygues Telecom obtient sa licence de téléphonie mobile.</p>
-                </button>
-                <div class="details" id="detail-1994" hidden>
-                    Le groupe Bouygues entre sur le marché français de la
-                    téléphonie mobile comme troisième opérateur, face aux
-                    acteurs déjà installés.
+            <div class="etape">
+                <h3>1994 - Création</h3>
+                <p>
+                    Le groupe Bouygues obtient une licence pour
+                    devenir le troisième opérateur mobile en France.
+                </p>
+                <button onclick="afficher('info1')">En savoir plus</button>
+                <div class="info" id="info1">
+                    L'objectif est de développer un nouveau réseau
+                    mobile et de concurrencer les opérateurs déjà présents.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-1996">
-                    <span class="year">1996</span>
-                    <h3>Lancement commercial</h3>
-                    <p>Développement des premières offres mobiles.</p>
-                </button>
-                <div class="details" id="detail-1996" hidden>
-                    L'opérateur commence à commercialiser ses services.
-                    L'enjeu est alors de développer son réseau, d'attirer
-                    des abonnés et de se faire une place sur le marché.
+            <div class="etape">
+                <h3>1996 - Début des offres</h3>
+                <p>
+                    Bouygues Telecom commence à proposer ses services
+                    aux clients.
+                </p>
+                <button onclick="afficher('info2')">En savoir plus</button>
+                <div class="info" id="info2">
+                    L'entreprise cherche à gagner des clients et à
+                    développer sa couverture réseau.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-2006">
-                    <span class="year">2006</span>
-                    <h3>Les forfaits Neo</h3>
-                    <p>Des offres qui répondent à l'évolution des usages.</p>
-                </button>
-                <div class="details" id="detail-2006" hidden>
-                    Les offres Neo illustrent la volonté de se différencier
-                    par les services et les formules tarifaires, dans un
-                    marché où les opérateurs cherchent à fidéliser leurs clients.
+            <div class="etape">
+                <h3>2006 - Forfaits Neo</h3>
+                <p>
+                    L'opérateur lance les forfaits Neo pour proposer
+                    de nouvelles formules aux utilisateurs.
+                </p>
+                <button onclick="afficher('info3')">En savoir plus</button>
+                <div class="info" id="info3">
+                    Ces offres permettent à Bouygues Telecom de se
+                    différencier grâce à ses tarifs et à ses services.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-2011">
-                    <span class="year">2011</span>
-                    <h3>Lancement de B&YOU</h3>
-                    <p>Une réponse aux attentes de prix et de flexibilité.</p>
-                </button>
-                <div class="details" id="detail-2011" hidden>
-                    Avec B&YOU, Bouygues Telecom développe une offre
-                    positionnée sur les forfaits sans engagement et
-                    accompagne la montée en puissance des offres mobiles
-                    commercialisées en ligne.
+            <div class="etape">
+                <h3>2011 - B&YOU</h3>
+                <p>
+                    Bouygues Telecom lance une marque proposant
+                    notamment des forfaits sans engagement.
+                </p>
+                <button onclick="afficher('info4')">En savoir plus</button>
+                <div class="info" id="info4">
+                    Cette offre répond aux clients qui recherchent
+                    plus de liberté et des prix compétitifs.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-2012">
-                    <span class="year">2012</span>
-                    <h3>L'arrivée de Free Mobile</h3>
-                    <p>Un tournant dans la concurrence du secteur.</p>
-                </button>
-                <div class="details" id="detail-2012" hidden>
-                    Free Mobile entre sur le marché français en janvier 2012
-                    avec des offres qui accentuent la pression sur les prix.
-                    Les opérateurs historiques doivent adapter leurs tarifs,
-                    leurs marques et leurs stratégies commerciales.
-                    Cette étape marque une rupture importante pour
-                    Bouygues Telecom et l'ensemble du secteur.
+            <div class="etape">
+                <h3>2012 - Free Mobile</h3>
+                <p>
+                    L'arrivée de Free Mobile change la concurrence
+                    sur le marché des forfaits mobiles.
+                </p>
+                <button onclick="afficher('info5')">En savoir plus</button>
+                <div class="info" id="info5">
+                    Les prix deviennent un enjeu important.
+                    Bouygues Telecom doit adapter ses offres pour
+                    rester compétitif.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-2013">
-                    <span class="year">2013</span>
-                    <h3>Accélération de la 4G</h3>
-                    <p>La qualité du réseau devient un enjeu majeur.</p>
-                </button>
-                <div class="details" id="detail-2013" hidden>
-                    Le déploiement de la 4G renforce l'importance de la
-                    couverture, des performances du réseau et des usages
-                    mobiles liés à l'Internet haut débit.
+            <div class="etape">
+                <h3>2020 - La 5G</h3>
+                <p>
+                    Bouygues Telecom lance ses services commerciaux
+                    5G en France.
+                </p>
+                <button onclick="afficher('info6')">En savoir plus</button>
+                <div class="info" id="info6">
+                    La 5G améliore les possibilités de connexion
+                    et représente un nouvel investissement pour
+                    les opérateurs.
                 </div>
-            </article>
+            </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-2020">
-                    <span class="year">2020</span>
-                    <h3>Déploiement de la 5G</h3>
-                    <p>Une nouvelle génération de réseau mobile.</p>
-                </button>
-                <div class="details" id="detail-2020" hidden>
-                    Le lancement commercial de la 5G en France ouvre de
-                    nouvelles perspectives pour la connectivité et les
-                    services numériques. L'investissement dans les réseaux
-                    et la qualité de service reste central.
-                </div>
-            </article>
+        </div>
 
-            <article class="event">
-                <span class="dot" aria-hidden="true"></span>
-                <button type="button" aria-expanded="false" aria-controls="detail-aujourdhui">
-                    <span class="year">Aujourd'hui</span>
-                    <h3>Un marché en transformation</h3>
-                    <p>Réseaux, services et compétitivité.</p>
-                </button>
-                <div class="details" id="detail-aujourdhui" hidden>
-                    Bouygues Telecom évolue dans un marché mature où la
-                    concurrence porte notamment sur les prix, la qualité
-                    du réseau, les services aux particuliers et aux
-                    entreprises, ainsi que les investissements dans les
-                    nouvelles technologies.
-                </div>
-            </article>
-
-        </section>
-
-        <section class="highlight">
-            <h3>2012 : un tournant stratégique</h3>
+        <div class="free">
+            <h3>Pourquoi 2012 est une date importante ?</h3>
             <p>
-                L'arrivée de Free Mobile constitue un événement important
-                de l'histoire récente de Bouygues Telecom. La concurrence
-                accrue sur les prix pousse les opérateurs à revoir leurs
-                offres et leur positionnement commercial. Pour Bouygues
-                Telecom, le développement de B&YOU, les investissements
-                dans le réseau et la différenciation par les services
-                s'inscrivent dans un environnement profondément transformé.
+                En 2012, Free Mobile arrive sur le marché avec des
+                forfaits à prix bas. Les autres opérateurs doivent
+                réagir pour garder leurs clients. Cet événement
+                renforce la concurrence et pousse Bouygues Telecom
+                à faire évoluer ses offres commerciales.
             </p>
-        </section>
+        </div>
+
     </main>
 
     <footer>
@@ -344,19 +223,15 @@
     </footer>
 
     <script>
-        const eventButtons = document.querySelectorAll(".event button");
+        function afficher(id) {
+            var bloc = document.getElementById(id);
 
-        eventButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const detailsId = button.getAttribute("aria-controls");
-                const details = document.getElementById(detailsId);
-                const isExpanded =
-                    button.getAttribute("aria-expanded") === "true";
-
-                button.setAttribute("aria-expanded", String(!isExpanded));
-                details.hidden = isExpanded;
-            });
-        });
+            if (bloc.style.display === "block") {
+                bloc.style.display = "none";
+            } else {
+                bloc.style.display = "block";
+            }
+        }
     </script>
 
 </body>
