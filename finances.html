@@ -3,34 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finances - Bouygues Telecom</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
+    <title>Analyse Bouygues Telecom - Finances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="finances.css">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="./bouygues-telecom-logo.png" width="60" height="60">
+            <img src="bouygues-telecom-logo.png" alt="Bouygues Telecom" class="logo-img">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
                 <li><a href="histoire.html">Historique</a></li>
-                <li><a href="strategie.html">Stratégie</a></li>
-                <li><a href="finances.html" class="active">Finances</a></li>
+                <li><a href="strategie.html">Stratégie Commerciale</a></li>
+                <li><a href="finances.html">Finances</a></li>
                 <li><a href="enjeux.html">Enjeux Futurs</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="padding: 4rem 5%; max-width: 1000px; margin: 0 auto;">
-        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Finances</h2>
-        <p>Bouygues Telecom affiche un chiffre d'affaires de 8,1 milliards d'euros en 2025, en hausse de 4%, mais son résultat opérationnel recule à 674 millions d'euros, pénalisé par la hausse des amortissements。 L'opérateur fait face à une pression concurrentielle persistante tout en portant un projet d'acquisition des actifs de SFR aux côtés d'Orange et Free.</p>
+    <main class="page-finances">
+        <div class="breadcrumbs">
+            <a href="index.html">Accueil</a> &gt; Finances
+        </div>
+
+        <h1>Les finances de Bouygues Telecom</h1>
+        <p class="intro">Combien l'entreprise vend, combien il lui reste, et combien elle investit : les résultats de 2022 à 2025 en quelques graphiques.</p>
+        <section id="chiffres-cles">
+            <h2>2025 en quatre chiffres</h2>
+            <div class="stats">
+
+                <div class="stat">
+                    <div class="stat-icone">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"></rect><rect x="10" y="6" width="4" height="14" rx="1"></rect><rect x="16" y="9" width="4" height="11" rx="1"></rect></svg>
+                    </div>
+                    <div class="stat-chiffre">8,1 Md€</div>
+                    <div class="stat-titre">Chiffre d'affaires</div>
+                    <div class="stat-detail">+3,6 % par rapport à 2024</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icone">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="3,17 9,11 13,15 21,7" class="trait"></polyline><polyline points="15,7 21,7 21,13" class="trait"></polyline></svg>
+                    </div>
+                    <div class="stat-chiffre">2,04 Md€</div>
+                    <div class="stat-titre">EBITDA après loyers</div>
+                    <div class="stat-detail">25,2 % du chiffre d'affaires</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icone">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="18" text-anchor="middle" font-size="17" font-weight="bold">€</text></svg>
+                    </div>
+                    <div class="stat-chiffre">331 M€</div>
+                    <div class="stat-titre">Résultat net</div>
+                    <div class="stat-detail">contre 418 M€ en 2024</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-icone">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="10" r="2"></circle><path d="M7 5.5a7 7 0 0 0 0 9M17 5.5a7 7 0 0 1 0 9M12 12v9M8 21h8" class="trait"></path></svg>
+                    </div>
+                    <div class="stat-chiffre">1,48 Md€</div>
+                    <div class="stat-titre">Investissements réseaux</div>
+                    <div class="stat-detail">environ 18 % du chiffre d'affaires</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="chiffre-affaires">
+            <h2>Un chiffre d'affaires en hausse</h2>
+            <p class="legende-section">Le chiffre d'affaires est le total des ventes de l'année. Passez la souris sur une barre pour voir le montant exact.</p>
+
+            <div class="carte graphique">
+                <svg viewBox="0 0 620 300" role="img" aria-labelledby="titre-ca">
+                    <title id="titre-ca">Chiffre d'affaires de Bouygues Telecom de 2022 à 2025, en millions d'euros</title>
+                    <line x1="30" y1="250" x2="590" y2="250" class="axe"></line>
+
+                    <rect x="50" y="64" width="100" height="186" rx="6" class="bar"><title>2022 : 7 532 M€</title></rect>
+                    <rect x="190" y="59" width="100" height="191" rx="6" class="bar"><title>2023 : 7 727 M€</title></rect>
+                    <rect x="330" y="57" width="100" height="193" rx="6" class="bar"><title>2024 : 7 820 M€</title></rect>
+                    <rect x="470" y="50" width="100" height="200" rx="6" class="bar bar-actuelle"><title>2025 : 8 098 M€</title></rect>
+
+                    <text x="100" y="54" text-anchor="middle" class="valeur-svg">7 532</text>
+                    <text x="240" y="49" text-anchor="middle" class="valeur-svg">7 727</text>
+                    <text x="380" y="47" text-anchor="middle" class="valeur-svg">7 820</text>
+                    <text x="520" y="40" text-anchor="middle" class="valeur-svg">8 098</text>
+
+                    <text x="100" y="275" text-anchor="middle">2022</text>
+                    <text x="240" y="275" text-anchor="middle">2023</text>
+                    <text x="380" y="275" text-anchor="middle">2024</text>
+                    <text x="520" y="275" text-anchor="middle">2025</text>
+                </svg>
+                <p class="note">En millions d'euros. Les barres partent de zéro.</p>
+            </div>
+
+            <div class="croissance">
+                <div class="puce"><span class="puce-annee">2023</span><span class="puce-valeur">+2,6 %</span></div>
+                <div class="puce"><span class="puce-annee">2024</span><span class="puce-valeur">+1,2 %</span></div>
+                <div class="puce"><span class="puce-annee">2025</span><span class="puce-valeur">+3,6 %</span></div>
+            </div>
+            <p class="note centre">Croissance d'une année sur l'autre, calculée à partir des chiffres publiés.</p>
+        </section>
+
+        <section id="rentabilite">
+            <h2>Ce qu'il reste après les dépenses</h2>
+            <p class="legende-section">L'EBITDA est le résultat de l'activité courante, avant l'usure des équipements, les intérêts et les impôts. « Après loyers » signifie que les loyers sont déjà retirés.</p>
+
+            <div class="duo">
+                <div class="carte carte-donut">
+                    <div class="donut" style="--p: 25.2;"><span>25,2 %</span></div>
+                    <p class="legende-carte">Marge d'EBITDA en 2025 : sur 100 € de ventes, environ 25 € restent après les charges courantes.</p>
+                </div>
+
+                <div class="carte carte-entonnoir">
+                    <h3>Du chiffre d'affaires au bénéfice (2025)</h3>
+                    <div class="barre">
+                        <span class="etiquette">Chiffre d'affaires</span>
+                        <div class="piste"><div class="remplissage" style="width: 100%;"></div></div>
+                        <span class="montant">8 098 M€</span>
+                    </div>
+                    <div class="barre">
+                        <span class="etiquette">EBITDA après loyers</span>
+                        <div class="piste"><div class="remplissage" style="width: 25.2%;"></div></div>
+                        <span class="montant">2 042 M€</span>
+                    </div>
+                    <div class="barre">
+                        <span class="etiquette">Résultat net</span>
+                        <div class="piste"><div class="remplissage remplissage-accent" style="width: 4.1%;"></div></div>
+                        <span class="montant">331 M€</span>
+                    </div>
+                    <p class="note">Le résultat net est le bénéfice final, une fois toutes les charges et les impôts payés.</p>
+                </div>
+            </div>
+
+            <p class="constat">Le résultat net baisse depuis 2023 : 457 M€, puis 418 M€, puis 331 M€.</p>
+
+            <details>
+                <summary>Voir le tableau détaillé</summary>
+                <table>
+                    <caption>Chiffre d'affaires, EBITDA après loyers et marge (en millions d'euros)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Année</th>
+                            <th scope="col">Chiffre d'affaires</th>
+                            <th scope="col">EBITDA après loyers</th>
+                            <th scope="col">Marge d'EBITDA</th>
+                            <th scope="col">Résultat net</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2022</td><td>7 532</td><td>1 773</td><td>23,5 %</td><td>-</td></tr>
+                        <tr><td>2023</td><td>7 727</td><td>1 969</td><td>25,5 %</td><td>457</td></tr>
+                        <tr><td>2024</td><td>7 820</td><td>2 037</td><td>26,0 %</td><td>418</td></tr>
+                        <tr><td>2025</td><td>8 098</td><td>2 042</td><td>25,2 %</td><td>331</td></tr>
+                    </tbody>
+                </table>
+                <p class="note">Marge = EBITDA ÷ chiffre d'affaires, calculée à partir des chiffres publiés.</p>
+            </details>
+        </section>
+
+        <section id="lexique">
+            <h2>Lexique</h2>
+            <details>
+                <summary>Les mots à connaître</summary>
+                <dl>
+                    <dt>EBITDA</dt>
+                    <dd>Résultat de l'activité courante, avant amortissements, intérêts et impôts.</dd>
+                    <dt>Marge d'EBITDA</dt>
+                    <dd>L'EBITDA divisé par le chiffre d'affaires, en pourcentage.</dd>
+                    <dt>Investissement d'exploitation brut</dt>
+                    <dd>Argent dépensé pour construire ou renouveler les équipements. « Hors fréquences » : l'achat des fréquences radio n'est pas compté.</dd>
+                    <dt>M€ et Md€</dt>
+                    <dd>Millions et milliards d'euros. 1 Md€ = 1 000 M€.</dd>
+                </dl>
+            </details>
+        </section>
+
+        <section id="sources">
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://www.corporate.bouyguestelecom.fr/nous-connaitre-2/chiffres-cles/" class="text-link" target="_blank" rel="noopener">Bouygues Telecom, « Chiffres clés » (indicateurs financiers au 31/12/2025)</a>, consulté le 11 octobre 2026.</li>
+                <li><a href="https://www.bouygues.com/app/uploads/2026/02/le-communique-de-presse.pdf" class="text-link" target="_blank" rel="noopener">Bouygues, communiqué de presse « Résultats 2025 du Groupe »</a>, février 2026.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
-         <p>&copy; 2026 - Page créée par May Hlaoui</p>
+        <a href="histoire.html">Historique</a> |
+        <a href="strategie.html">Stratégie Commerciale</a> |
+        <a href="finances.html">Finances et Chiffres Clés</a> |
+        <a href="enjeux.html">Enjeux Futurs</a> |
+        <a href="#">Crédits et Sources</a>
     </footer>
 
 </body>
