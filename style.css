@@ -3,10 +3,12 @@ head {
   }
 
 :root {
-  --primary-color: #0055A4;
-  --accent-color: #FF5A00;
-  --text-color: #333;
-  --bg-light: #f4f4f9;
+  --primary-color: #0D9488;   
+  --secondary-color: #059669; 
+  --accent-color: #F59E0B;    
+  --neutral-color: #374151;   
+  --text-color: #374151;      
+  --bg-light: #F9FAFB;        
 }
 
 * {
@@ -62,7 +64,7 @@ nav a.active {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #003366 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #065f55 100%);
   color: #fff;
   padding: 6rem 2rem;
   text-align: center;
@@ -91,7 +93,7 @@ nav a.active {
 }
 
 .btn:hover {
-  background: #e04e00;
+  background: var(--secondary-color);
 }
 
 .intro-cards {
@@ -121,7 +123,7 @@ nav a.active {
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #222;
+  background-color: var(--neutral-color);
   color: #ccc;
   margin-top: 2rem;
 }
