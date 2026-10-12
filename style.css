@@ -139,3 +139,237 @@ footer {
     justify-content: center;
   }
 }
+
+:root {
+  --primary: #0d9488; /* Teal Océan */
+  --secondary: #059669; /* Vert Émeraude */
+  --accent: #f59e0b; /* Ambre Doré */
+  --neutral: #374151; /* Gris Graphite */
+  --bg-light: #f9fafb; /* Gris Clair */
+}
+
+/* Typographie et Design Global */
+body {
+  font-family: "Carlito", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--neutral);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bahnschrift", sans-serif;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* En-tête Flottant (Header) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--neutral);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.lang-selector {
+  padding: 5px 10px;
+  border: 1px solid var(--neutral);
+  border-radius: 4px;
+  font-family: "Carlito", sans-serif;
+  color: var(--neutral);
+}
+
+/* Layout Principal et Espace Blanc */
+main {
+  margin-top: 100px; /* Compensation du menu flottant */
+  padding: 0 50px 50px 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fil d'Ariane */
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.breadcrumbs a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Haut de page (Hero Section) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: url("https://cloudfront-eu-central-1.images.arcpublishing.com/infopro/WRHAHRPPHRNG7P7ZY3UWK3AXOY.png")
+    center/cover no-repeat;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+.hero-message {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.hero-message h1 {
+  margin-top: 0;
+}
+
+.hero-message p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Boutons (Proposition B) */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--secondary);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Effet d'ombre portée */
+  text-decoration: none;
+  background-color: #047857;
+}
+
+/* Liens textuels */
+a.text-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Chiffres Clés (Infographies statiques) */
+.key-figures-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.figure-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-top: 4px solid var(--accent);
+}
+
+.figure-card .number {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 42px;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.news-item {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+img.news-img {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.news-item:hover img.news-img {
+  transform: scale(1.05); 
+}
+
+footer {
+  background-color: var(--neutral);
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
