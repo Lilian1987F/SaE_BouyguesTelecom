@@ -3,54 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouygues Telecom</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
+    <title>Analyse Bouygues Telecom - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <img src="./bouygues-telecom-logo.png" width="60" height="60">
-        </div>
+        <div class="logo">Bouygues Telecom</div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="histoire.html">Historique</a></li>
-                <li><a href="strategie.html">Stratégie</a></li>
-                <li><a href="finances.html">Finances</a></li>
-                <li><a href="enjeux.html">Enjeux Futurs</a></li>
+                <li><a href="#">Historique</a></li>
+                <li><a href="#">Stratégie Commerciale</a></li>
+                <li><a href="#">Finances</a></li>
+                <li><a href="#">Enjeux Futurs</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="breadcrumbs">
+            <a href="#">Accueil</a> > Vue d'ensemble
+        </div>
+
         <section class="hero">
-            <div class="hero-content">
-                <h2>Bouygues Telecom</h2>
-                <p>Découvrez la stratégie, les finances et la place d'un acteur majeur des télécommunications en France, grâce à notre site informatif.</p>
-                <a href="strategie.html" class="btn">Découvrir la stratégie</a>
+            <div class="hero-message">
+                <h1>Décrypter les enjeux d'un leader des télécoms</h1>
+                <p>Ce site a pour objectif d'analyser en profondeur l'historique, la stratégie de positionnement et les défis d'innovation technologique de Bouygues Telecom.</p>
+                <a href="#chiffres-cles" class="btn">Découvrir les chiffre clés</a>
             </div>
         </section>
 
-        <section class="intro-cards">
-            <div class="card">
-                <h3>Chiffres Clés</h3>
-                <p>Une croissance soutenue tirée par le recrutement de nouveaux clients sur la fibre et le mobile.</p>
+        <section id="chiffres-cles">
+            <h2>Chiffres Clés</h2>
+            <div class="key-figures-container">
+                <div class="figure-card">
+                    <div class="number">22,9 M</div>
+                    <p>Clients Mobiles et Fixes en 2023</p>
+                    <a href="#" class="text-link">Voir la croissance</a>
+                </div>
+                <div class="figure-card">
+                    <div class="number">7,7 Md€</div>
+                    <p>Chiffre d'affaires global annuel</p>
+                    <a href="#" class="text-link">Analyse financière</a>
+                </div>
+                <div class="figure-card">
+                    <div class="number">5G / Fibre</div>
+                    <p>Déploiement technologique prioritaire</p>
+                    <a href="#" class="text-link">Enjeux & Innovation</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>L'Effet Free</h3>
-                <p>Comment Bouygues Telecom a repensé son modèle économique en 2012 avec B&You.</p>
-            </div>
-            <div class="card">
-                <h3>Investissements</h3>
-                <p>Des milliards d'euros injectés pour soutenir le déploiement FTTH et la 5G.</p>
+        </section>
+
+        <section id="actualites">
+            <h2>Actualités Récentes</h2>
+            <div class="news-carousel">
+                <div class="news-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Antennes_5G_o2_Munich.jpg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" class="news-img" alt="Stratégie 5G">
+                    <h3>Accélération de la 5G</h3>
+                    <p>Bouygues Telecom poursuit ses investissements massifs dans les infrastructures de nouvelle génération à travers le territoire national.</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://cdn.lesnumeriques.com/optim/news/23/236126/66e73022-internet-ultra-rapide-bouygues-ameliore-la-b-you-pure-fibre-avec-cette-nouveaute__1200_1200__189-0-1390-1201.jpg" class="news-img" alt="Offres B&You">
+                    <h3>Nouvelles offres B&You</h3>
+                    <p>Face à la pression concurrentielle, l'opérateur ajuste son positionnement tarifaire sur le segment low-cost.</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4QZNEf81oT2rb3shNLw2B6Iz6trCDsUNmwmIHoDYh8G9JCjw6g0eaDxo&s=10" class="news-img" alt="Initiatives RSE">
+                    <h3>Engagement Environnemental</h3>
+                    <p>L'entreprise renforce sa politique RSE avec de nouveaux objectifs de réduction de l'empreinte carbone d'ici 2030.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Page créée par Simon</p>
+        <a href="#">Historique</a> | 
+        <a href="#">Stratégie Commerciale</a> | 
+        <a href="#">Finances et Chiffres Clés</a> | 
+        <a href="#">Enjeux Futurs</a> | 
+        <a href="#">Crédits et Sources</a>
     </footer>
 
 </body>
