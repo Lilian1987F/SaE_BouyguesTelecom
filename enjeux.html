@@ -6,12 +6,266 @@
     <title>Enjeux Futurs - Bouygues Telecom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+
+    
+    <style>
+        
+        body {
+            font-family: 'Carlito', Calibri, 'Liberation Sans', Arial, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6,
+        .intro-panel h1,
+        .intro-panel .sous-titre,
+        .chiffre strong,
+        .tuile strong,
+        nav a,
+        .btn,
+        footer {
+            font-family: 'Bahnschrift', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .enjeux-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 5% 1rem;
+        }
+
+        .enjeux-wrap section {
+            margin-bottom: 3.5rem;
+        }
+
+        .enjeux-wrap h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .enjeux-wrap h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .enjeux-wrap p {
+            margin-bottom: 1rem;
+            max-width: 75ch;
+        }
+
+        
+        .intro-panel {
+            max-width: 1100px;
+            margin: 2rem auto 0;
+            padding: 2.5rem 3rem;
+            background: #fff;
+            border: 2px dashed var(--primary-color);
+            border-radius: 6px;
+            width: 90%;
+        }
+
+        .intro-panel h1 {
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            line-height: 1.1;
+            color: var(--primary-color);
+            margin-bottom: 0.6rem;
+        }
+
+        .intro-panel .sous-titre {
+            font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        
+        .tuiles {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .tuile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 170px;
+            padding: 1rem;
+            border: 2px dotted var(--primary-color);
+            border-radius: 4px;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+
+        .tuile:hover,
+        .tuile:focus-visible {
+            box-shadow: 0 8px 24px rgba(0, 85, 164, 0.18);
+            transform: translateY(-3px);
+        }
+
+        .tuile strong {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        .tuile span {
+            font-size: 0.95rem;
+            margin-top: 0.4rem;
+        }
+
+        
+        .trio {
+            max-width: 1100px;
+            width: 90%;
+            margin: 2rem auto 0;
+            padding: 1.8rem 2rem;
+            background: #fff;
+            border: 2px solid var(--primary-color);
+            border-radius: 6px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .trio p {
+            margin: 0;
+        }
+
+        .detail-titre {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 900px) {
+            .tuiles { grid-template-columns: repeat(2, 1fr); }
+            .trio { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .intro-panel { padding: 1.5rem; }
+            .tuiles { grid-template-columns: 1fr; }
+        }
+
+        
+        .chiffres {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .chiffre {
+            background: #fff;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 6px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .chiffre strong {
+            display: block;
+            font-size: 2rem;
+            color: var(--primary-color);
+            line-height: 1.1;
+        }
+
+        .chiffre span {
+            font-size: 0.9rem;
+        }
+
+        
+        .grille {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .grille .card {
+            max-width: none;
+            padding: 1.5rem;
+        }
+
+        .grille .card p {
+            margin-bottom: 0;
+        }
+
+        
+        .frise {
+            list-style: none;
+            border-left: 3px solid var(--primary-color);
+            margin: 1.5rem 0 1rem 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .frise li {
+            position: relative;
+            margin-bottom: 1.2rem;
+        }
+
+        .frise li::before {
+            content: "";
+            position: absolute;
+            left: calc(-1.5rem - 8px);
+            top: 0.45rem;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--accent-color);
+        }
+
+        .frise time {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .note {
+            background: #fff;
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            border-left: 4px solid var(--primary-color);
+            font-size: 0.95rem;
+            max-width: 75ch;
+        }
+
+        .sources ul {
+            padding-left: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .sources a {
+            color: var(--primary-color);
+        }
+
+        
+        .btn {
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            box-shadow: 0 8px 24px rgba(255, 90, 0, 0.35);
+            transform: translateY(-3px);
+        }
+
+    </style>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="./bouygues-telecom-logo.png" width="60" height="60">
+            <img src="./bouygues-telecom-logo.png" width="60" height="60" alt="Logo Bouygues Telecom">
         </div>
         <nav>
             <ul>
@@ -24,11 +278,137 @@
         </nav>
     </header>
 
-    <main style="padding: 4rem 5%; max-width: 1000px; margin: 0 auto;">
-        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Enjeux Futurs</h2>
-        <p>Bouygues Telecom doit relever plusieurs défis futurs majeurs : l'extinction programmée des réseaux 2G et 3G au profit de la 4G et de la 5G, ainsi que l'ambitieux projet d'acquisition des actifs de SFR, qui pourrait transformer le paysage concurrentiel français.
+    <div class="intro-panel">
+        <h1>Enjeux futurs et défis</h1>
+        <p class="sous-titre">Réseau 5G, innovation, écologie et rachat de SFR : les grands chantiers de Bouygues Telecom</p>
+        <div class="tuiles">
+            <a class="tuile" href="#5g"><strong>87,6 %</strong><span>de la population couverte en 5G</span></a>
+            <a class="tuile" href="#rse"><strong>SBTi</strong><span>objectifs climat validés en 2022</span></a>
+            <a class="tuile" href="#reseaux"><strong>2026 / 2029</strong><span>fin de la 2G puis de la 3G</span></a>
+            <a class="tuile" href="#sfr"><strong>20,35 Md€</strong><span>valeur du projet de rachat de SFR</span></a>
+        </div>
+    </div>
 
-</p>
+    <div class="trio">
+        <p>La 5G est la priorité : après avoir étendu sa couverture, Bouygues Telecom doit améliorer les débits et déployer la 5G SA.</p>
+        <p>Un réseau mobile consomme beaucoup d'énergie : réduire son empreinte carbone est un enjeu écologique et économique.</p>
+        <p>Éteindre les vieux réseaux et réussir le rachat de SFR pourraient transformer le marché français des télécoms.</p>
+    </div>
+
+    <h2 class="detail-titre">Les enjeux en détail</h2>
+
+    <main class="enjeux-wrap">
+
+        
+        <section id="5g">
+            <h2>Déploiement de la 5G et nouvelles technologies</h2>
+            <p>La 5G est le premier chantier de Bouygues Telecom. Après avoir étendu sa couverture à la quasi-totalité des zones peuplées, l'opérateur doit maintenant améliorer la qualité du réseau (débits, latence) et développer de nouveaux usages.</p>
+
+            <div class="chiffres">
+                <div class="chiffre">
+                    <strong>87,6 %</strong>
+                    <span>de la population couverte en 5G (31 mars 2026)</span>
+                </div>
+                <div class="chiffre">
+                    <strong>+ de 99 %</strong>
+                    <span>de la population couverte en 4G</span>
+                </div>
+                <div class="chiffre">
+                    <strong>11 098</strong>
+                    <span>sites 5G en 3,5 GHz opérationnels sur 12 810 autorisés (1er mai 2026, ANFR)</span>
+                </div>
+            </div>
+
+            <div class="grille">
+                <div class="card">
+                    <h3>Deux bandes de fréquences</h3>
+                    <p>Bouygues Telecom déploie sa 5G sur la bande 2 100 MHz, réutilisée depuis la 4G pour étendre la couverture rapidement, et sur la bande 3 500 MHz, qui apporte les plus hauts débits.</p>
+                </div>
+                <div class="card">
+                    <h3>Vers la 5G SA (5G+)</h3>
+                    <p>La 5G « Standalone » repose sur un cœur de réseau 100 % 5G. Elle réduit la latence (5 à 10 ms contre 20 à 30 ms en 5G NSA). Le déploiement est progressif et, chez Bouygues Telecom, encore limité aux forfaits haut de gamme dans les zones urbaines denses.</p>
+                </div>
+                <div class="card">
+                    <h3>La 5G Box</h3>
+                    <p>La 5G fixe offre une alternative à la fibre dans les zones où celle-ci n'est pas encore disponible. C'est un moyen de valoriser le réseau mobile pour l'accès à Internet à domicile.</p>
+                </div>
+                <div class="card">
+                    <h3>Objets connectés et 6G</h3>
+                    <p>Les objets connectés (alarmes, capteurs, paiement) migrent de la 2G/3G vers la 4G/5G. À plus long terme, l'opérateur devra se préparer à la 6G, qui succédera à la 5G.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="rse">
+            <h2>Environnement et RSE</h2>
+            <p>Un réseau mobile consomme beaucoup d'énergie, et le trafic de données augmente chaque année. Réduire l'empreinte carbone du réseau est donc un enjeu à la fois écologique et économique pour Bouygues Telecom.</p>
+
+            <div class="grille">
+                <div class="card">
+                    <h3>Une trajectoire climat validée</h3>
+                    <p>Les objectifs de réduction des émissions de Bouygues Telecom ont été validés en 2022 par l'initiative SBTi (Science Based Targets initiative), qui vérifie leur cohérence avec les objectifs de l'Accord de Paris.</p>
+                </div>
+                <div class="card">
+                    <h3>Réduire la consommation du réseau</h3>
+                    <p>Les équipements 4G/5G récents sont plus efficaces. L'opérateur peut aussi mettre en veille certains équipements lorsque le trafic est faible, ce qui réduit la consommation d'énergie sans dégrader le service.</p>
+                </div>
+                <div class="card">
+                    <h3>Éco-conception et déchets</h3>
+                    <p>L'éco-conception des produits télécoms (box, équipements) limite leur impact. Arrêter les anciens réseaux rend certains téléphones et objets connectés inutilisables : leur remplacement génère aussi un impact carbone qu'il faut maîtriser.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="reseaux">
+            <h2>Fin de la 2G et de la 3G</h2>
+            <p>Les vieux réseaux sont éteints par étapes pour libérer des fréquences au profit de la 4G et de la 5G. Chaque opérateur choisit son propre calendrier.</p>
+
+            <ul class="frise">
+                <li><time>Fin 2026</time> : arrêt prévu du réseau 2G de Bouygues Telecom.</li>
+                <li><time>Fin 2029</time> : arrêt prévu du réseau 3G, trois ans plus tard.</li>
+            </ul>
+
+            <p class="note">Selon l'Arcep, la 2G et la 3G représentent entre 21 % et 33 % de la consommation électrique des stations de base des réseaux mobiles, malgré leur faible usage. Leur extinction réduit donc l'empreinte carbone, mais oblige les clients et les entreprises à remplacer les terminaux incompatibles avec la 4G/5G.</p>
+        </section>
+
+        <section id="sfr">
+            <h2>Le projet de rachat de SFR</h2>
+            <p>C'est l'enjeu le plus important pour le marché français : le partage des activités de SFR entre Bouygues Telecom, Free et Orange ferait passer le pays de quatre à trois opérateurs.</p>
+
+            <ul class="frise">
+                <li><time>Octobre 2025</time> : première offre commune de Bouygues Telecom, Free et Orange.</li>
+                <li><time>17 avril 2026</time> : nouvelle offre à 20,35 milliards d'euros de valeur d'entreprise, et début des négociations exclusives avec Altice France.</li>
+                <li><time>6 juin 2026</time> : signature d'un protocole d'accord avec Altice France.</li>
+                <li><time>15 juillet 2026</time> : la Commission européenne confie l'examen du dossier à l'Autorité de la concurrence française.</li>
+            </ul>
+
+            <div class="grille">
+                <div class="card">
+                    <h3>Ce que récupérerait Bouygues Telecom</h3>
+                    <p>Environ 42 % du prix total, soit 8,5 milliards d'euros. L'opérateur reprendrait l'activité et les clients entreprises (B2B) de SFR, ainsi que son réseau mobile en zone non dense. Les clients particuliers (B2C), les infrastructures et les fréquences seraient partagés entre les trois opérateurs.</p>
+                </div>
+                <div class="card">
+                    <h3>Une validation encore attendue</h3>
+                    <p>L'Autorité de la concurrence prévoit une instruction d'au moins 18 mois. Son président a estimé que l'opération ne « va pas de soi » sur un marché déjà très concentré. L'accord n'est donc pas définitif et SFR continue de fonctionner normalement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sources">
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://www.bbox-mag.fr/mobiles/reseau/couverture-5g-bouygues-telecom-2026/44819031">Bbox-mag : couverture 5G Bouygues Telecom 2026</a> (chiffres Bouygues Telecom et ANFR)</li>
+                <li><a href="https://www.arcep.fr/cartes-et-donnees/nos-cartes/5g/derniers-chiffres.html">Arcep : observatoire des déploiements 5G</a></li>
+                <li><a href="https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/environnement-110923.html">Arcep : impact carbone de l'extinction de la 2G/3G</a></li>
+                <li><a href="https://www.banquedesterritoires.fr/lextinction-de-la-2g3g-pourrait-generer-des-gains-environnementaux-substantiels">Banque des Territoires : gains environnementaux de l'extinction 2G/3G</a></li>
+                <li><a href="https://www.clubic.com/actualite-615757-grosse-avancee-pour-le-rachat-de-sfr-free-orange-bouygues-telecom-tombent-d-accord-avec-altice-les-details.html">Clubic : protocole d'accord pour le rachat de SFR</a></li>
+                <li><a href="https://www.autoritedelaconcurrence.fr/fr/entityprint/pdf/node/12235">Autorité de la concurrence : examen du rachat de SFR</a></li>
+                <li><a href="https://www.bouygues.com/app/uploads/2024/03/reponses-aux-questions-ecrites-des-actionnairesannexes_vf-1-1.pdf">Groupe Bouygues : objectifs de décarbonation (SBTi)</a></li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
