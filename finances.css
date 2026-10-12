@@ -64,6 +64,11 @@ nav ul li a {
   font-weight: 600;
 }
 
+nav a:hover,
+nav a.active {
+  color: var(--primary-color);
+}
+
 nav ul li a:hover {
   color: var(--primary);
   text-decoration: underline;
