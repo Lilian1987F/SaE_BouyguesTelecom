@@ -470,3 +470,22 @@ main {
   font-size: 0.9rem;
   margin-top: 4px;
 }
+
+footer {
+  background-color: var(--neutral);
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
