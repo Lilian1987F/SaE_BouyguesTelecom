@@ -24,17 +24,11 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 
 ### Page d'accueil
 
-**Auteur : Nom Prénom**  
+**Auteur : GAULON Simon**  
 
-Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Findex.html)
 
-
-![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
-
-ou 
-
-<img src="doc/capture_1_W3C.png" style="width=400px" alt="capture ecran sur w3c">
-
+![capture d'écran de la conformité de la page ...](doc/Indexverif.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/capture_1_ecoconcept.png)
 
