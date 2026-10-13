@@ -246,8 +246,7 @@ main {
   width: 100%;
   height: 100vh;
   height: 100svh;
-  background: url("https://cloudfront-eu-central-1.images.arcpublishing.com/infopro/WRHAHRPPHRNG7P7ZY3UWK3AXOY.png")
-    center/cover no-repeat;
+  background: url("./Bouyguesbatiment.jpg") center/cover no-repeat;    center/cover no-repeat;
   border-radius: 8px;
   display: flex;
   align-items: center;
