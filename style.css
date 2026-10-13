@@ -77,7 +77,6 @@ nav a.active {
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-color)
   max-width: 600px;
   margin: 0 auto 2rem;
 }
@@ -271,6 +270,7 @@ main {
 }
 
 .hero-message p {
+  color: var(--text-color)
   font-size: 18px;
   margin-bottom: 20px;
 }
