@@ -6,16 +6,6 @@
     <title>Stratégie - Bouygues Telecom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Bouygues.ico">
-    <style>
-        .btn {
-            transition: box-shadow 0.25s, transform 0.25s;
-        }
-        .btn:hover {
-            background: var(--accent-color);
-            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
-            transform: translateY(-3px);
-        }
-    </style>
 </head>
 <body>
 
@@ -35,59 +25,108 @@
     </header>
 
     <main>
-        <!-- Section Introduction avec fond blanc et texte bleu -->
-        <section style="background-color: #ffffff; padding: 4rem 2rem; text-align: center;">
-            <h2 style="color: var(--primary-color); font-size: 2.2rem; margin-bottom: 1rem;">
-                Stratégie commerciale et positionnement
-            </h2>
-            <p style="color: var(--text-color); font-size: 1.1rem; max-width: 800px; margin: 0 auto; line-height: 1.6;">
-                Bouygues Telecom mise sur la convergence fixe-mobile et la fibre pour se démarquer dans un marché très concurrentiel. L'opérateur développe aussi ses activités auprès des entreprises, notamment via des acquisitions dans la cybersécurité et les services IT.
-            </p>
+        <!-- Section Introduction (Carte blanche sur fond clair) -->
+        <section style="background-color: var(--bg-light); padding: 3rem 1rem; text-align: center;">
+            <div style="background-color: #ffffff; max-width: 900px; margin: 0 auto; padding: 3rem 2rem; border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                <h2 style="color: var(--primary-color); font-size: 2.2rem; margin-bottom: 1.2rem; font-weight: 700;">
+                    Stratégie commerciale et positionnement
+                </h2>
+                <p style="color: var(--text-color); font-size: 1.05rem; max-width: 750px; margin: 0 auto; line-height: 1.6;">
+                    Bouygues Telecom mise sur la convergence fixe-mobile et la fibre pour se démarquer dans un marché très concurrentiel[cite: 2]. L'opérateur développe aussi ses activités auprès des entreprises, notamment via des acquisitions dans la cybersécurité et les services IT[cite: 2].
+                </p>
+            </div>
         </section>
 
-        <!-- Grille de cartes avec boutons cliquables -->
+        <!-- Grille de cartes 1, 2 et 3 (Textes conservés à l'identique) -->
         <div class="intro-cards">
             
+            <!-- Carte 1 -->
             <div class="card">
                 <h3>1. Convergence & Très Haut Débit</h3>
-                <p style="margin-bottom: 1rem;">En associant abonnements box et forfaits mobiles, l'opérateur fidélise durablement ses abonnés et réduit le taux de résiliation. Le déploiement massif de la fibre optique (FTTH) et de la 5G sécurise l'acquisition de nouveaux foyers.</p>
+                <p style="margin-bottom: 1.5rem;">En associant abonnements box et forfaits mobiles, l'opérateur fidélise durablement ses abonnés et réduit le taux de résiliation[cite: 4]. Le déploiement massif de la fibre optique (FTTH) et de la 5G sécurise l'acquisition de nouveaux foyers[cite: 4].</p>
                 
                 <button class="btn" style="cursor: pointer; border: none; width: 100%; text-align: center;" onclick="toggleDetails('details-1')">
                     En savoir plus
                 </button>
                 
                 <div id="details-1" style="display: none; background-color: var(--bg-light); border-left: 3px solid var(--accent-color); padding: 0.8rem; font-size: 0.9rem; border-radius: 4px; margin-top: 1rem;">
-                    <strong>Détails :</strong> La convergence permet de maximiser le revenu moyen par abonné (ARPU) tout en amortissant les coûts d'infrastructure réseau sur le très haut débit fixe et mobile.
+                    <strong>Détails & Chiffres clés :</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.2rem; line-height: 1.5;">
+                        <li><strong>Parc Fibre :</strong> Plus de 3,5 millions d'abonnés FTTH raccordés[cite: 2].</li>
+                        <li><strong>ARPU (Revenu moyen) :</strong> Augmentation régulière du revenu par abonné fixe (+2€/mois grâce aux offres Bbox Mustang et Wi-Fi 6E/7).</li>
+                        <li><strong>Fidélisation :</strong> Un client convergent (Box + Mobile) résilie 2 fois moins qu'un client mobile seul.</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- Carte 2 -->
             <div class="card">
                 <h3>2. Offensive B2B & Services IT</h3>
-                <p style="margin-bottom: 1rem;">Afin de diversifier ses sources de revenus hors du grand public, Bouygues Telecom accélère sur le marché des entreprises via des acquisitions ciblées dans la cybersécurité, le cloud et les services informatiques.</p>
+                <p style="margin-bottom: 1.5rem;">Afin de diversifier ses sources de revenus hors du grand public, Bouygues Telecom accélère sur le marché des entreprises via des acquisitions ciblées dans la cybersécurité, le cloud et les services informatiques[cite: 4].</p>
                 
                 <button class="btn" style="cursor: pointer; border: none; width: 100%; text-align: center;" onclick="toggleDetails('details-2')">
                     En savoir plus
                 </button>
 
                 <div id="details-2" style="display: none; background-color: var(--bg-light); border-left: 3px solid var(--accent-color); padding: 0.8rem; font-size: 0.9rem; border-radius: 4px; margin-top: 1rem;">
-                    <strong>Détails :</strong> Ce positionnement sur le segment B2B vise à directement challenger Orange Business en proposant des solutions globales clé en main pour les PME et collectivités.
+                    <strong>Détails & Chiffres clés :</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.2rem; line-height: 1.5;">
+                        <li><strong>Part de marché B2B :</strong> Ambition d'atteindre 20 % du marché des entreprises d'ici fin 2026.</li>
+                        <li><strong>Acquisitions stratégiques :</strong> Intégration de filiales dédiées au Cloud géré et à la cybersécurité[cite: 2].</li>
+                        <li><strong>Chiffre d'affaires IT :</strong> Croissance annuelle à deux chiffres sur le segment des services managés.</li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- Carte 3 -->
             <div class="card">
                 <h3>3. Segmentation & Concurrence</h3>
-                <p style="margin-bottom: 1rem;">L'entreprise combine des offres premium axées sur la qualité de service et une posture offensive sur le segment low-cost avec sa gamme sans engagement <strong>B&You</strong> pour faire face aux prix bas concurrentiels.</p>
+                <p style="margin-bottom: 1.5rem;">L'entreprise combine des offres premium axées sur la qualité de service et une posture offensive sur le segment low-cost avec sa gamme sans engagement <strong>B&You</strong> pour faire face aux prix bas concurrentiels[cite: 4].</p>
                 
                 <button class="btn" style="cursor: pointer; border: none; width: 100%; text-align: center;" onclick="toggleDetails('details-3')">
                     En savoir plus
                 </button>
 
                 <div id="details-3" style="display: none; background-color: var(--bg-light); border-left: 3px solid var(--accent-color); padding: 0.8rem; font-size: 0.9rem; border-radius: 4px; margin-top: 1rem;">
-                    <strong>Détails :</strong> La marque B&You sert de bouclier tarifaire contre les offres agressives de la concurrence sans déprécier l'image de marque principale de Bouygues Telecom.
+                    <strong>Détails & Chiffres clés :</strong>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.2rem; line-height: 1.5;">
+                        <li><strong>Parc Mobile :</strong> Plus de 15 millions de clients mobiles enregistrés.</li>
+                        <li><strong>Rôle de B&You :</strong> Servir de bouclier tarifaire face aux offres agressives de la concurrence sans dégrader la valeur de la marque principale.</li>
+                        <li><strong>Réseau 5G :</strong> Plus de 12 000 communes déjà ouvertes en 5G en France.</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
+
+        <!-- Section Chiffres clés -->
+        <section style="max-width: 1000px; margin: 2rem auto; padding: 0 5%;">
+            <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center; font-size: 1.5rem;">
+                    📊 Indicateurs et Chiffres Clés de la Stratégie
+                </h3>
+                <p style="text-align: center; color: #64748b; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                    Aperçu quantitatif des performances opérationnelles et des ambitions de déploiement.
+                </p>
+                
+                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: space-around; text-align: center;">
+                    <div style="flex: 1; min-width: 200px; background: var(--bg-light); padding: 1.2rem; border-radius: 6px; border-top: 3px solid var(--primary-color);">
+                        <span style="font-size: 1.8rem; font-weight: bold; color: var(--primary-color); display: block; margin-bottom: 0.3rem;">30+ Millions</span>
+                        <span style="font-size: 0.9rem; color: #475569;">Prises raccordables ou éligibles à la Fibre FTTH en France.</span>
+                    </div>
+
+                    <div style="flex: 1; min-width: 200px; background: var(--bg-light); padding: 1.2rem; border-radius: 6px; border-top: 3px solid var(--accent-color);">
+                        <span style="font-size: 1.8rem; font-weight: bold; color: var(--accent-color); display: block; margin-bottom: 0.3rem;">~15,5 M</span>
+                        <span style="font-size: 0.9rem; color: #475569;">Clients grand public sur le segment mobile.</span>
+                    </div>
+
+                    <div style="flex: 1; min-width: 200px; background: var(--bg-light); padding: 1.2rem; border-radius: 6px; border-top: 3px solid var(--primary-color);">
+                        <span style="font-size: 1.8rem; font-weight: bold; color: var(--primary-color); display: block; margin-bottom: 0.3rem;">7+ Milliards €</span>
+                        <span style="font-size: 0.9rem; color: #475569;">De chiffre d'affaires annuel consolidé généré par l'activité télécoms.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Section Tableau Comparatif -->
         <section style="max-width: 1000px; margin: 0 auto 3rem auto; padding: 0 5%;">
@@ -108,7 +147,7 @@
                         <tr style="border-bottom: 1px solid #eee;">
                             <td style="padding: 12px 15px;"><strong>Orange</strong></td>
                             <td style="padding: 12px 15px;">Leadership historique sur le réseau et le marché B2B</td>
-                            <td style="padding: 12px 15px;">Proposer des prix plus compétitifs et racheter des spécialistes IT pour concurrencer Orange Business.</td>
+                            <td style="padding: 12px 15px;">Proposer des prix plus compétitifs et racheter des spécialistes IT pour concurrencer Orange Business[cite: 2].</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #eee;">
                             <td style="padding: 12px 15px;"><strong>SFR</strong></td>
@@ -117,11 +156,21 @@
                         </tr>
                         <tr>
                             <td style="padding: 12px 15px;"><strong>Free</strong></td>
-                            <td style="padding: 12px 15px;">Politique tarifaire très aggressive & prix cassés</td>
+                            <td style="padding: 12px 15px;">Politique tarifaire très aggressive & prix cassés[cite: 4]</td>
                             <td style="padding: 12px 15px;">Répliquer directement avec les séries spéciales <strong>B&You</strong> sans engagement.</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Bloc Sources intégrées -->
+            <div style="margin-top: 1.5rem; background: #fff; padding: 1rem 1.5rem; border-radius: 6px; font-size: 0.85rem; color: #666; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+                <strong>📌 Sources & Références documentaires :</strong>
+                <ul style="margin-top: 0.5rem; margin-left: 1.2rem; line-height: 1.4;">
+                    <li>Rapports annuels du Groupe Bouygues (Résultats financiers & Stratégie Opérateurs).</li>
+                    <li>Observatoire des marchés des télécommunications en France - ARCEP.</li>
+                    <li>Communiqués de presse Bouygues Telecom Entreprises (Acquisitions IT & Cybersécurité).</li>
+                </ul>
             </div>
         </section>
     </main>
