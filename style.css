@@ -375,7 +375,3 @@ footer a:hover {
   text-decoration: underline;
   color: var(--accent);
 }
-
-.sources a {
-      color: var(--primary-color);
-}
