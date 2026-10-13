@@ -28,27 +28,67 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Findex.html)
 
-![capture d'écran de la conformité de la page ...](doc/Indexverif.png)
+![capture d'écran de la conformité de la page ...](doc/indexverif.png)
 
-![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/capture_1_ecoconcept.png)
+Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=e831fb46-5027-4eb0-b8bc-41812406fc7f)
 
-ou 
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/indexecolo.png)
 
-<img src="doc/capture_1_ecoconcept.png" style="width=400px" alt="capture ecran sur ecoconcept pour tester l'éco-conception">
+### Page historique
 
-<!--  style="width=400px" ne fonctionne pas -->
+**Auteur : GRATI Mohamed-Mehdi**  
 
-### Présentation générale
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Fhistoire.html)
 
-**Auteur : Nom Prénom**  
+![capture d'écran de la conformité de la page ...](doc/histoireverif.png)
 
-Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdemo-am90.github.io%2Fs1-demo%2Findex.html)
+Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=fc57aae5-0004-4cd7-97c4-4f8d32e360db)
 
-<br>
-<img src="doc/capture_1_W3C.png" width="400px" alt="capture ecran sur ecoconcept">
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/histoireecolo.png)
 
-<br>
-<img src="doc/capture_1_ecoconcept.png" width="400px" alt="capture ecran sur ecoconcept">
+### Page Stratégie
+
+**Auteur : HANNACHI Mehdi**  
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Fstrategie.html)
+
+![capture d'écran de la conformité de la page ...](doc/strategieverif.png)
+
+Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=12119003-ce71-42f8-9996-79138b8c33f3)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/strategieecolo.png)
+
+### Page Finances
+
+**Auteur : HLAOUI May**  
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Ffinances.html)
+
+![capture d'écran de la conformité de la page ...](doc/financeverif.png)
+
+Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=84d6ad2d-1bd5-4649-9395-0f2c55e135db)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/financeecolo.png)
+
+### Page Enjeux Futurs
+
+**Auteur : GUIFFARD Lilian**  
+
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Fenjeux.html)
+
+![capture d'écran de la conformité de la page ...](doc/enjeuxverif.png)
+
+Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=9801a1c4-578c-4185-af5d-1cea5a6b7b9d)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/enjeuxecolo.png)
+
+
+
+
+
+
+
+
 
 ## Répartition du travail
 
