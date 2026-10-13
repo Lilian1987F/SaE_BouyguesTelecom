@@ -28,7 +28,7 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 
 Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&level=warning&doc=https%3A%2F%2Flilian1987f.github.io%2FSaE_BouyguesTelecom%2Findex.html)
 
-![capture d'écran de la conformité de la page ...](doc/indexverif.png)
+![capture d'écran de la conformité de la page ...](doc/Indexverif.png)
 
 Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=e831fb46-5027-4eb0-b8bc-41812406fc7f)
 
