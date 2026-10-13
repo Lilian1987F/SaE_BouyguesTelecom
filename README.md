@@ -82,38 +82,34 @@ Vérification ecoindex : [Détail ICI](https://www.ecoindex.fr/resultat/?id=9801
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'éco-conception](doc/enjeuxecolo.png)
 
-
-
-
-
-
-
-
-
 ## Répartition du travail
 
 ### Planification - Diagramme de GANTT
 
-- Nom Prénom
+- GAULON Simon
+- GUIFFARD Lilian
 
 ### Recherches d'informations
 
-- Nom Prénom
-- Nom Prénom
+- Tout le groupe
 
 
 ### Développement site
 
-- Nom Prénom
+- GAULON Simon
   - Page d’accueil
   - "Template" de page (Navbar/Footer)
   - Page présentation
-- Nom Prénom
+- GRATI Mohamed-Mehdi
   - Page histoire
-- Nom Prénom
-  - Page organisation
+- HANNACHI Mehdi
+  - Page stratégie
+- HLAOUI May
+  - Page finance
+- GUIFFARD Lilian
+  - Page enjeux futurs
 
 
 ## Contributeurs
 
-![capture d'écran sur la contribution des membres du projet](doc/livrable2_contributors.png)
+![capture d'écran sur la contribution des membres du projet](doc/contributeurs.png)
