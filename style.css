@@ -128,27 +128,14 @@ footer {
   margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 :root {
-  --primary: #0d9488; /* Teal Océan */
-  --secondary: #059669; /* Vert Émeraude */
-  --accent: #f59e0b; /* Ambre Doré */
-  --neutral: #374151; /* Gris Graphite */
-  --bg-light: #f9fafb; /* Gris Clair */
+  --primary: #0d9488; 
+  --secondary: #059669; 
+  --accent: #f59e0b; 
+  --neutral: #374151; 
+  --bg-light: #f9fafb; 
 }
 
-/* Typographie et Design Global */
 body {
   font-family: "Carlito", sans-serif;
   background-color: var(--bg-light);
@@ -164,7 +151,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-/* En-tête Flottant (Header) */
 header {
   position: fixed;
   top: 0;
@@ -216,16 +202,14 @@ nav ul li a:hover {
   color: var(--neutral);
 }
 
-/* Layout Principal et Espace Blanc */
 main {
-  margin-top: 100px; /* Compensation du menu flottant */
+  margin-top: 100px; 
   padding: 0 50px 50px 50px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Fil d'Ariane */
 .breadcrumbs {
   margin-bottom: 20px;
   font-size: 14px;
@@ -240,7 +224,6 @@ main {
   text-decoration: underline;
 }
 
-/* Haut de page (Hero Section) */
 .hero {
   position: relative;
   width: 100%;
@@ -273,7 +256,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* Boutons (Proposition B) */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -288,12 +270,11 @@ main {
 }
 
 .btn:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Effet d'ombre portée */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
   text-decoration: none;
   background-color: #047857;
 }
 
-/* Liens textuels */
 a.text-link {
   color: var(--primary);
   text-decoration: none;
@@ -304,7 +285,6 @@ a.text-link:hover {
   text-decoration: underline;
 }
 
-/* Chiffres Clés (Infographies statiques) */
 .key-figures-container {
   display: flex;
   gap: 30px;
