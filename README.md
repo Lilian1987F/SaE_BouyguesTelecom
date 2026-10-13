@@ -17,7 +17,7 @@ Dans le cadre de notre SaÉ, nous avons pour projet de créer un site web inform
 
 ## Choix de conception  
 
-Pour la conception du site, nous nous sommes grandement inspirés du site officiel de ******* (disponible [ici](https://www.entreprise.com/fr-fr/)), du site d'un de ses principaux concurrents [xxxxxxxxxx](https://www.entreprise2.fr/) et nous avons pris comme référence la charte de ************** disponible [ici](doc/charte_graphique.pdf).    
+Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Bouygues Telecom (disponible [ici](https://www.bouyguestelecom.fr/)), du site d'un de ses principaux concurrents [Orange](orange.com/fr/groupe) et nous avons pris comme référence le site de RTE France pour la page finance disponible [ici](rte-france.com/donnees-publications/eco2mix-donnees-temps-reel).    
 
 
 ## Développement Site Web et Validation des pages
